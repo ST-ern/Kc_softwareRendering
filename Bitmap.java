@@ -1,5 +1,9 @@
 import java.util.Arrays;
 
+/**
+ * @author stern
+ * @date 2020/1/12 10:00
+ */
 public class Bitmap {
     private final int m_width;  // width, in pixel, of the img
     private final int m_height;  // height, in pixel, of the img
@@ -55,7 +59,7 @@ public class Bitmap {
      * @date 2020-01-12 10:28
      * @description together the r,g,b,a char value to a int value
     */
-    public void CopyToIntArray(byte[] dest) {
+    public void CopyToByteArray(byte[] dest) {
         for(int i=0; i<m_width * m_height; i++) {
             dest[i * 3    ] = m_compoments[i * 4 + 1];
             dest[i * 3 + 1] = m_compoments[i * 4 + 2];
